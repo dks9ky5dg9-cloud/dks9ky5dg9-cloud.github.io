@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Official pages for Gyro Block Crush and Gyro Block Crush Watch.">
+    <title>Gyro Block Crush</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        --ink: #171717;
+        --muted: #5f6368;
+        --line: #dedbd2;
+        --paper: #fffdf7;
+        --surface: #ffffff;
+        --accent: #08764b;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100svh;
+        background: var(--paper);
+        color: var(--ink);
+        display: grid;
+        place-items: center;
+        padding: 32px 18px;
+      }
+      main {
+        width: min(920px, 100%);
+      }
+      h1 {
+        font-size: clamp(2.8rem, 8vw, 6rem);
+        line-height: 1.04;
+        margin: 0 0 18px;
+      }
+      p {
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.65;
+        max-width: 680px;
+      }
+      .links {
+        display: grid;
+        gap: 14px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: 34px;
+      }
+      a {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        color: inherit;
+        display: block;
+        padding: 24px;
+        text-decoration: none;
+      }
+      a:hover {
+        border-color: var(--accent);
+      }
+      strong {
+        display: block;
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+      }
+      span {
+        color: var(--muted);
+        line-height: 1.5;
+      }
+      @media (max-width: 680px) {
+        .links { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Gyro Block Crush</h1>
+      <p>Choose the version you are looking for. Each page includes marketing, support, and privacy information.</p>
+      <section class="links" aria-label="Versions">
+        <a href="ios/">
+          <strong>iOS Version</strong>
+          <span>9 stages of tilt-control arcade play for iPhone.</span>
+        </a>
+        <a href="watch/">
+          <strong>Watch Version</strong>
+          <span>8 compact stages tuned for Apple Watch.</span>
+        </a>
+      </section>
+    </main>
+  </body>
+</html>
